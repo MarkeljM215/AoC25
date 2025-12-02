@@ -1,0 +1,1 @@
+Podobno kot part 1, preberemo txt datoteko, string pretvorimo  v integer za povecevanje stevila,s foor loopom gremo cez celoten range, preverimo vse moznosti ponavljanja stevila s if stavki. najvec stevil je 10!. če najdemo stevilo ga shranimo v seznam.

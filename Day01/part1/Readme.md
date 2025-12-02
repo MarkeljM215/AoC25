@@ -1,0 +1,1 @@
+Preberemo txt datoteko, vrsstico po vrstico. Iz prve crke izluscimo ali bomo pristevali ali odstevali. Dolocimo zacetno stanje. Pristevamo in odstevamo dobljeno stevilo, nakoncu delimo s 1000 in 100 da stevilo zmanjsamo v rang od 0 do 99. v primeru da je koncmo stevilo 0 si to zapisemo.

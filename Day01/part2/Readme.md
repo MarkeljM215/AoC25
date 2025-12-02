@@ -1,0 +1,1 @@
+Preberemo datoteko, vrstico po vrstico, dolocimo smer potovanja, s pomocjo for loopa povecujemo ali znizujemo vrednost stevilcnice. ce pridemo do koncne vrednosti jo damo nazaj na zacetno in si zapisemo prehod cez 0.
