@@ -177,6 +177,6 @@ int main()
                 std::cout << vsota << " "<< std::endl;
 
         } 
-    
+    input_file.close();
     return 0;
 }

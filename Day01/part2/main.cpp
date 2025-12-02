@@ -25,7 +25,7 @@ int main()
 
     int vrednost = 0;
     int dodatek = 0;
-    int temp_zac_stanje = 50;
+    
 
     while (std::getline(input_file, line))
     {
@@ -33,16 +33,16 @@ int main()
         std::string rez = line.substr(1,(line.size()-1)) ;
         rezultat = std::stoi(rez);
   
-        
+        //stevec kok je nicel
         dodatek = 0;
         vmesno_stanje = zac_stanje;   
         if (line[0] == 'R')
             {
-
+            //vrednost povecujem za 1
             for (int i = 0; i < rezultat; i++)
             {
                 vmesno_stanje = vmesno_stanje + 1;
-            
+                //vrnem nazaj na zacetek de ne preseze stevicnie
                 if(vmesno_stanje == 100)
                 {
                     vmesno_stanje = 0;
@@ -56,11 +56,11 @@ int main()
        
         }
         else
-        {
+        {   //vrednost zmanjsujem za 1
             for (int i = 0; i < rezultat; i++)
             {
                 vmesno_stanje = vmesno_stanje - 1;
-            
+                //vrnem nazaj na zacetek de ne preseze
                 if(vmesno_stanje == -100)
                 {
                     vmesno_stanje = 0;
@@ -73,7 +73,7 @@ int main()
             }
         }
         
-        
+       //kocni stevec nicel 
         temp = temp + dodatek;
 
         zac_stanje = vmesno_stanje;        

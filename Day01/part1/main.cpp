@@ -20,12 +20,9 @@ int main()
     int zac_stanje = 50;
     int rezultat = 0;
     int vmesno_stanje = 0;
-
-    int temp = 0;
-
     int vrednost = 0;
-    int dodatek = 0;
-    int temp_zac_stanje = 50;
+    
+    
 
     while (std::getline(input_file, line))
     {
@@ -35,7 +32,7 @@ int main()
 
 
 
-    //zacetek preracunavanja stanja
+    //zacetek preracunavanja stanja povecujem ali zmanjsujem
         if (line[0] == 'L')
         {
 
@@ -50,7 +47,7 @@ int main()
         
         
 
-        
+        //delim vsoto da pride v rang 100
         zac_stanje = zac_stanje %1000;
         zac_stanje = zac_stanje %100;
         

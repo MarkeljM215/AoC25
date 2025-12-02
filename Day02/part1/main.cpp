@@ -36,6 +36,7 @@ int main()
                     std::string start;
                     std::string konec;
                     char delit = '-';
+                    //morjo bit long long ka drgac zmanka vrednosti
                     long long temp = 0;
                     long long start_1;
                     long long konec_1;
@@ -66,26 +67,26 @@ int main()
 
                             std::stringstream ss;
                             std::string temp;
-
+                            //pretvorba nazaj v string za manipulacijo
                             ss << start_1;
                             ss >> temp;
                             bool velikost = ((temp.size()) % 2);
 
                              
-
+                            //preverim ce imamo sodo stevilo stevk
                             if(velikost == 0)
                             {
-                            //std::cout << " " << velikost << " "; 
                             std::string rez_1 = temp.substr(0,((temp.size())/2)) ;
                             std::string rez_2 = temp.substr(((temp.size())/2),((temp.size())/2)) ;  
-                            //std::cout << " " << rez_1 << " "<< rez_2<< std::endl; 
-
+                             
+                            //ce je ena polovica enaka drugi shranim seznam
                             if(rez_1 == rez_2)
                                 {
                                     
                                     seznam.push_back(start_1);
                                 }
                             }
+                            //povecam stevilko
                             start_1 = start_1+1;
 
                         }
@@ -94,6 +95,7 @@ int main()
 
 
             }
+            //izpis seznama
             long long vsota = 0;
             std::cout << "tole je vsota" << std::endl;
             for (int i = 0; i < seznam.size(); i++)
@@ -109,6 +111,6 @@ int main()
 
 
     
-   
+   input_file.close();
     return 0;
 }
