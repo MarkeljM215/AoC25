@@ -1,0 +1,1 @@
+Program prebere eno vrstico, nato zapise vse člene v vektor. Kopira vektor in primerja člene vektorja enega po enega. v kolikor najde vecje stevilo prepise originalni vektor, v kolikor najde manjse stevilo preneha z pregledom.

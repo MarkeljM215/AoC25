@@ -1,0 +1,1 @@
+program prebere eno vrstico. v vrstici najde najvecje stevilo in nato naprej od najvecjega stevila isce drugo najvecje stevilo. v primeru da najde najvecje stevilo na koncu vzame eno stevilo prej.
