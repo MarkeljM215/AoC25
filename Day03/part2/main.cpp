@@ -90,7 +90,7 @@ vsota = vsota + stevilka1;
            
 
 
-//std::cout<<"Tole je vsota "<<vsota<<std::endl;
+std::cout<<"Tole je vsota "<<vsota<<std::endl;
 input_file.close();
     return 0;
 }
