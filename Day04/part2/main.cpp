@@ -142,12 +142,7 @@ for (int q = 0; q < 50; q++)
         {
             for (int k = 0; k < vrsta1.size(); k++)
             {
-                std::cout<<vse[n][k];
-                if (vse[n][k] == 'X')
-                {
-                    rezultat += 1 ;
-                }
-                
+                std::cout<<vse[n][k];                
             }
             std::cout <<std::endl;
         }

@@ -1,0 +1,3 @@
+Program prebere datoteko in shrani celotno zadevo v matriko vectorjev skozi katero se lahko sprehajamo z dvema for loopoma. Na straneh dodamo se en dodaten znak da preprecimo iskanje zunej obmocja, prav tako na koncu in zacetku dodamo eno vrstico.
+
+Potem se sprehodimo cez matriko z 3x3 kvadrtkom in gledamo glede na posametno mesto kaj se okoli njega nahaja. v primeru da so pogoji izpolnjeni in nimamo vec kot 4 v okolici ga zamenjamo z X in to zabelezimo v vrednost.
