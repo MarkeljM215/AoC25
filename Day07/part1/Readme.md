@@ -1,0 +1,1 @@
+z uporabo podobnih metod kot za dan 4 podatke shranim v matriko, nato z dvema for loopoma grem cez matriko in v primeru da naletim na spliter in zgoraj zarek ta zarek razdelim, v primeru da naletim samo na zarek ga samo podaljsa. splitanje stejem v vrednsoti. to naredim za vse vrstice v matriki.

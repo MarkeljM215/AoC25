@@ -35,6 +35,9 @@ int main()
         seznam1.push_back(temp);    
      }
 
+//DDOANO
+
+
 //zmanjsujem vector dokler ni velikosti 11 clenov
 for (int i = seznam1.size(); i> 12 ; i--)
 {
