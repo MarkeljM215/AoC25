@@ -1,0 +1,39 @@
+//ustavrim matriko vecjo kot so vsa števila da dam notri ploscice
+long long vrstice = 100;
+long long stolpci = 100;
+
+std::vector<std::vector<char>> floor_plan(vrstice, std::vector<char>(stolpci, '.'));
+
+
+//v ustvarjeno matriko dodam rdeče ploscice
+for (int d = 0; d < seznam.size(); d++)
+{
+    for (int a = 0; a < vrsta.size(); a = a+2)
+    {
+        floor_plan[(seznam[d][a+1])/1000][(seznam[d][a])/1000] = '#';
+    }
+    
+}
+
+
+        //izpis matrike
+        for (int n = 0; n < seznam.size(); n++)
+        {
+            for (int k = 0; k < vrsta.size(); k++)
+            {
+                std::cout<<seznam[n][k]<<",";
+                
+            }
+            std::cout <<std::endl;
+        }
+
+        //izpis matrike
+        for (int n = 0; n < vrstice; n++)
+        {
+            for (int k = 0; k < stolpci; k++)
+            {
+                std::cout<<floor_plan[n][k];
+                
+            }
+            std::cout <<std::endl;
+        }
