@@ -5,7 +5,6 @@
 #include <vector>
 #include <algorithm>
 #include <map>
-
 struct Povezava {
     int drugi_clen;
     int prvi_clen;
@@ -95,18 +94,26 @@ for (int n = 0; n < vse.size(); n++)
 
 //nasatvimo povezave
 int stevec_povezav = 0;
+long long poz_1_clen;
+long long poz_2_clen;
+long long rezultat = 0;
 //preverjamo kako so sedaj povezave narejen
 for (int k = 0; k < seznam_povezav.size(); k++)
 {
-    //nastavimo kok je max povezav
-    if (stevec_povezav == 1000)
+    //nastavimo kok je max povezav (part 2 nastaavim ko gledam izpis v terminalu ali je zmnozek 0;
+    if (stevec_povezav == 5700)
     {
+        long long x = vse[poz_1_clen][0];
+        long long y = vse[poz_2_clen][0];
+        rezultat = (x) *(y);
+        std::cout << vse[poz_1_clen][0] << "    " << vse[poz_2_clen][0] << " njun zmnozek " << rezultat <<std::endl;
+        
         break;
     }
     stevec_povezav = stevec_povezav +1;
 
-    int poz_1_clen = seznam_povezav[k].prvi_clen;
-    int poz_2_clen = seznam_povezav[k].drugi_clen;
+    poz_1_clen = seznam_povezav[k].prvi_clen;
+    poz_2_clen = seznam_povezav[k].drugi_clen;
 
     //pogledamo v vektor na te pozicije kok pise da je grupa
     int grupa1 = skupina[poz_1_clen];
@@ -191,13 +198,12 @@ for (int j = 0; j < maks_stevila.size(); j++)
 }
 //zmnozim dobljeno
 int rezultat_max = 0;
-rezultat_max = pon1 * pon2 * pon3;
+rezultat_max = pon1 * pon2;
 std::cout << "Tole je prvo mesto " << prvo_mesto << " in kolikokrat se ponovi " << pon1 << std::endl;
 std::cout << "Tole je drugo mesto " << drugo_mesto << " in kolikokrat se ponovi " << pon2 << std::endl;
-std::cout << "Tole je tretje mesto " << tretje_mesto << " in kolikokrat se ponovi " << pon3 << std::endl;
-std::cout << "Tole je rezultat prvih treh ponovitev " << rezultat_max << std::endl;
-
-
+std::cout << "Tole je rezultat zmnozka ponovitev " << rezultat_max << std::endl;
+std::cout << "Če rezultat zmnozkov ni nič povecaj stevilo ponovitev rocno v programu ! "<< std::endl;
+  
 
 return 0;
 

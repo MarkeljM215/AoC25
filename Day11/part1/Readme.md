@@ -1,0 +1,1 @@
+Preberem txt datoteko, iz nje izluscim kjuc  v prvem stolpu in ga shranim v map, ostale člene shranim v vektor mapa. tako dobim graf iz nodov kjučev in napisanih povezav kam lahko tukaj grem. Nato s malo čarovnije od rekurzije preštejem povezave s sprehajanjem po grafu od trenutn točke do out.

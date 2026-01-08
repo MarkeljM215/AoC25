@@ -1,0 +1,1 @@
+Preberem txt datoteko, iz nje izluščim lokacije posameznih točk, shranim v seznam, nato pa samo mnozi vsako točko z vsako in gledam kdaj dobim najvecjo površino.
